@@ -1,0 +1,8 @@
+<div>
+<p>{{quote.description}}</p>
+<p>This quote wa appended on {{quote.completeDate|dateCount}} days ago</p>
+<p >Created By: {{quote.submittedBy}}</p>
+<i (click) = 'upVote()' class ="fas fa-thumbs-up">{{numberOfLikes}}</i>
+<i (click) = 'downVote()' class ="fas fa-thumbs-down pl-3">{{numberOfDislike}}</i><br>
+<button (click)= 'quoteDelete(true)'  class="btn btn-danger">Delete Quote</button>
+</div>
